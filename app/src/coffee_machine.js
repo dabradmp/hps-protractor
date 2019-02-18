@@ -132,7 +132,7 @@ function CoffeeMachine () {
     instance.set('countdownToDescale', instance.get('countdownToDescale') - 1);
   }
 
-  instance.filTank = function () {
+  instance.fillTank = function () {
     instance.set('tank', 60);
   }
 
