@@ -1,6 +1,6 @@
 # hps-protractor
 
-[![Build Status](https://travis-ci.org/hiptest/hps-protractor.svg?branch=master)](https://travis-ci.org/hiptest/hps-protractor)
+[![Build Status](https://travis-ci.org/dabradmp/hps-protractor.svg?branch=master)](https://travis-ci.org/dabradmp/hps-protractor)
 
 Hiptest publisher samples with Protractor
 
