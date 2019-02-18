@@ -9,7 +9,7 @@ describe('Beans', function () {
   });
 
   it('Message "Fill beans" is displayed after 38 coffees are taken', function () {
-    // Tags: priority:0
+    // Tags: priority:high
     // When I take "38" coffees
     this.actionwords.iTakeCoffeeNumberCoffees(38);
     // Then message "Fill beans" should be displayed
@@ -17,8 +17,8 @@ describe('Beans', function () {
   });
 
   it('It is possible to take 40 coffees before there is really no more beans', function () {
-    // Tags: priority:2
-    // Given I take "40" coffees
+    // Tags: priority:low
+    // When I take "40" coffees
     this.actionwords.iTakeCoffeeNumberCoffees(40);
     // Then coffee should be served
     this.actionwords.coffeeShouldBeServed();
@@ -31,10 +31,10 @@ describe('Beans', function () {
   });
 
   it('After adding beans, the message "Fill beans" disappears', function () {
-    // Tags: priority:0
-    // Given I take "40" coffees
+    // Tags: priority:high
+    // When I take "40" coffees
     this.actionwords.iTakeCoffeeNumberCoffees(40);
-    // When I fill the beans tank
+    // And I fill the beans tank
     this.actionwords.iFillTheBeansTank();
     // Then message "Ready" should be displayed
     this.actionwords.messageMessageShouldBeDisplayed("Ready");
